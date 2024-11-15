@@ -1,10 +1,6 @@
 import { withSentryConfig } from '@sentry/nextjs';
 
-const nextConfig = {
-  experimental: {
-    instrumentationHook: true,
-  },
-};
+const nextConfig = {};
 
 // Make sure adding Sentry options is the last code to run before exporting
 export default withSentryConfig(nextConfig, {
