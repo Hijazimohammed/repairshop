@@ -52,7 +52,7 @@ export default async function TicketFormPage({
 
       //return ticket form
       console.log(customer);
-      <TicketForm customer={customer} />;
+      return <TicketForm customer={customer} />;
     }
 
     if (ticketId) {
@@ -72,7 +72,7 @@ export default async function TicketFormPage({
       //return ticket from
       console.log('ticket: ', ticket);
       console.log('customer: ', customer);
-      <TicketForm customer={customer} ticket={ticket} />;
+      return <TicketForm customer={customer} ticket={ticket} />;
     }
   } catch (error) {
     if (error instanceof Error) {
